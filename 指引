@@ -5,6 +5,7 @@ Ubuntu
 桌面
 sudo add-apt-repository ppa:kubuntu-ppa/backports
 sudo apt update
+#选择下面一个SDDM
 sudo apt install kubuntu-desktop
 sudo apt install kde-plasma-desktop
 Link:
