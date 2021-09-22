@@ -1,0 +1,11 @@
+Ubuntu
+自带windows10 子系统V20.04
+
+
+桌面
+sudo add-apt-repository ppa:kubuntu-ppa/backports
+sudo apt update
+sudo apt install kubuntu-desktop
+sudo apt install kde-plasma-desktop
+Link:
+https://blog.csdn.net/weixin_39720807/article/details/111514435
