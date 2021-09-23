@@ -10,3 +10,7 @@ sudo apt install kubuntu-desktop
 sudo apt install kde-plasma-desktop
 Link:
 https://blog.csdn.net/weixin_39720807/article/details/111514435
+删掉以上：
+用docker部署
+LINK
+https://blog.csdn.net/Mr_FengT/article/details/107029503
