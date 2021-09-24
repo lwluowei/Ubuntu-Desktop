@@ -2,15 +2,29 @@ Ubuntu
 自带windows10 子系统V20.04
 
 
-桌面
-sudo add-apt-repository ppa:kubuntu-ppa/backports
-sudo apt update
-#选择下面一个SDDM
-sudo apt install kubuntu-desktop
-sudo apt install kde-plasma-desktop
-Link:
-https://blog.csdn.net/weixin_39720807/article/details/111514435
-删掉以上：
+
+
 用docker部署
 LINK
 https://blog.csdn.net/Mr_FengT/article/details/107029503
+
+docker 桌面ubuntu
+docker pull  gotoeasy/ubuntu-desktop
+
+docker run -d -p 22:22 -p 5900:5900 gotoeasy/ubuntu-desktop
+
+ 
+保存容器
+docker commit 0bd244689ed2 ubuntu-vim
+新建容器
+docker commit -a "runoob.com" -m "my apache" 0bd244689ed2 mymysql:v1
+启动
+docker run -it ubuntu-vim /bin/bash
+
+Windows下Docker  windows ping 不通 docker的镜像解决：
+link:https://www.jianshu.com/p/a9b6fafbb645
+route add 172.17.0.0 mask 255.255.0.0 192.168.75.139(本地主机IP)
+其中第一个参数是目标地址(注意最后一位是0，不然提示参数错误)
+第二个地址是docker的子网掩码，
+第三个是虚拟机的IP地址
+route add 172.17.0.0 mask 255.255.0.0 192.168.75.139(本地主机IP) -p
