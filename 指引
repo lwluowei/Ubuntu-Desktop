@@ -28,3 +28,6 @@ route add 172.17.0.0 mask 255.255.0.0 192.168.75.139(本地主机IP)
 第二个地址是docker的子网掩码，
 第三个是虚拟机的IP地址
 route add 172.17.0.0 mask 255.255.0.0 192.168.75.139(本地主机IP) -p
+python 2-3切换
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150
